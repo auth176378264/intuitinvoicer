@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Request</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      background-color: #2CA01C; /* BRAND COLOR */
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    .content {
+      padding: 30px;
+      color: #333;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .invoice-box {
+      margin-top: 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .invoice-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+    }
+
+    .invoice-row.alt {
+      background-color: #f9fafb;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .cta a {
+      background-color: #2CA01C; /* BRAND COLOR */
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h2>Payment Request</h2>
+    </div>
+
+    <div class="content">
+      Hello <strong>{{Customer_Name}}</strong>,<br><br>
+
+      You have a pending invoice ready for payment. Please review the details below and complete payment at your convenience.
+
+      <div class="invoice-box">
+        <div class="invoice-row alt">
+          <div><strong>Invoice Number</strong></div>
+          <div>{{Invoice_Number}}</div>
+        </div>
+        <div class="invoice-row">
+          <div><strong>Amount Due</strong></div>
+          <div><strong>{{Amount_Due}}</strong></div>
+        </div>
+        <div class="invoice-row alt">
+          <div><strong>Due Date</strong></div>
+          <div>{{Due_Date}}</div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a href="{{Payment_Link}}">Pay Securely</a>
+      </div>
+
+      <div class="footer">
+        If you have already completed this payment, please ignore this message.<br><br>
+
+        Thank you,<br>
+        <strong>{{Business_Name}}</strong><br>
+        {{Business_Email}}<br>
+        {{Business_Phone}}
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
